@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    color: white;
+    transition: 0.5s ease;
+    text-align: center;
+}
+
+body {
+    background-color: #191825;
+}
+
+.title {
+    margin-top: 20px;
+}
+
+.heading {
+    margin-top: 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    padding: 30px;
+}
+
+.plan-type {
+    display: inline-flex;
+    background-color: #262a42;
+    margin: 10px 0px;
+}
+
+.plan-type p {
+    padding: 10px 50px;
+}
+
+.plan-type p:hover {
+    cursor: pointer;
+    background-color: #865DFF;
+}
+
+.plans {
+    display: flex;
+    gap: 30px;
+    padding: 50px 20px;
+    text-align: center;
+
+}
+
+ul {
+    list-style: none;
+    padding: 10px 30px;
+}
+
+li {
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+.card {
+    background-color: #443C68;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin: 0px 10px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(10px 20px 40px rgba(0, 0, 0, 0.656));
+}
+
+.button {
+    background-color: #865DFF;
+    width: 100%;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+h4 {
+    padding: 20px;
+}
+
+.content {
+    padding: 10px 40px;
+}
+
+.title {
+    padding-top: 10px;
+}
+
+.card h2 {
+    color: #ccbaff;
+    font-size: 30px;
+}
+
+.card span {
+    color: #ccbaff;
+    font-size: 18px;
+    padding: 5px;
+}
+
+/* media queries */
+@media(max-width : 600px) {
+    .wrapper {
+        margin: 10px;
+    }
+
+    .plans {
+        flex-direction: column;
+        width: 350px;
+        padding: 20px;
+        height: 10px;
+    }
+
+    .heading {
+        margin: 10px 0px;
+        width: 100%;
+    }
+
+    .heading h2 {
+        font-size: 16px;
+    }
+
+    .plan-type {
+        display: flex;
+        font-size: 13px;
+        justify-content: space-between;
+        padding: 0px;
+    }
+
+    .plan-type p {
+        padding: 10px 30px;
+    }
+
+    .card {
+        font-size: 1rem;
+    }
+
+}
